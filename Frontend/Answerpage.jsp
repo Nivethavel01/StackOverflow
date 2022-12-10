@@ -1,7 +1,7 @@
 <%
 try{
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	  Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "nivetha2002");
+	  Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "password");
      Statement mystatement = con.createStatement();
 	 ResultSet Mysql=mystatement.executeQuery("select * from Answers");
 while(Mysql.next()){
@@ -54,7 +54,7 @@ String comm=request.getParameter("comment");
 try
 {
 	    Class.forName("com.mysql.cj.jdbc.Driver");
-	    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "nivetha2002");
+	    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "password");
         Statement st = con.createStatement();
            int i=st.executeUpdate("insert into Answers(id,answers,comment)values('"+ids+"','"+answers+"','"+comm+"')");
         }
@@ -88,7 +88,7 @@ try
 String st=request.getParameter("Question no");
 try{
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	  Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "nivetha2002");
+	  Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "password");
      Statement mystatement = con.createStatement();
 	 ResultSet Mysql=mystatement.executeQuery("select * from Answers where id=st");
 while(Mysql.next()){
