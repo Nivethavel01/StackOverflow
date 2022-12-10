@@ -69,7 +69,7 @@ body {
 <%
 try{
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	  Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "n*********2");
+	  Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "password");
      Statement mystatement = con.createStatement();
 	 ResultSet Mysql=mystatement.executeQuery("select * from  Questions");
 while(Mysql.next()){
