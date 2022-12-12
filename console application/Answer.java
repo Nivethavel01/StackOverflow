@@ -16,7 +16,7 @@ public class answer extends question{
 					     String com=s.nextLine();
 					     String comment=s.nextLine();
 			             Class.forName("com.mysql.cj.jdbc.Driver");
-			             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "nivetha2002");
+			             Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "password");
 			             PreparedStatement pst = con.prepareStatement("insert into Answers(answer,id,comment) values(?,?,?)");
 			             pst.setString(1,answer);
 		          	     pst.setInt(2, id);	
