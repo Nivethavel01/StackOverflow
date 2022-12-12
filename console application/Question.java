@@ -18,7 +18,7 @@ public class question {
 				     String com=s.nextLine();
 				     String comment=s.nextLine();
 	                                         Class.forName("com.mysql.cj.jdbc.Driver");
-	                                         Connection con = DriverManagser.getConnection("jdbc:mysql://localhost:3309/stack", "root", "nivetha2002");
+	                                         Connection con = DriverManagser.getConnection("jdbc:mysql://localhost:3309/stack", "root", "password");
 	                                         PreparedStatement pst = con.prepareStatement("insert into Questions(id,question,comment) values(?,?,?)");
 	                                         pst.setInt(1,id);
 	                                         pst.setString(2, question);
