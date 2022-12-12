@@ -13,7 +13,7 @@ Connection con = null;
 String driver = "com.mysql.cj.jdbc.Driver";
 try {
 Class.forName(driver);
-   Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "nivetha2002");
+   Connection con1 = DriverManager.getConnection("jdbc:mysql://localhost:3309/stack", "root", "password");
 
 try {
 	Statement st = con1.createStatement();
